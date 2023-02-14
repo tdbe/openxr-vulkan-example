@@ -1,0 +1,3 @@
+C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/CMakeFiles/ALL_BUILD.dir
+C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/CMakeFiles/ZERO_CHECK.dir
+C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/CMakeFiles/openxr-vulkan-example.dir

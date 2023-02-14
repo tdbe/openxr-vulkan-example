@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\DataBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Headset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\ImageBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MeshData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MirrorView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Pipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\DataBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Headset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\ImageBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MeshData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MirrorView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Pipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Diffuse.vert" />
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Diffuse.frag" />
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Grid.vert" />
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Grid.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{930BDE57-8FAB-30E5-8D3A-49E57FFAD5E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6E3B09B1-7ECD-3378-9ECE-FAF938976C03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

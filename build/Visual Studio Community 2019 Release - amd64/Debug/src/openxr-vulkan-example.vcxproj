@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1995D886-BFFC-342B-A2F8-6539564707F6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>openxr-vulkan-example</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openxr-vulkan-example.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">openxr-vulkan-example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openxr-vulkan-example.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">openxr-vulkan-example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openxr-vulkan-example.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">openxr-vulkan-example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openxr-vulkan-example.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">openxr-vulkan-example</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;DEBUG;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>		shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/external/glfw/lib/win/glfw3.dll" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/models" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/models"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Diffuse.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders/Diffuse.vert.spv" 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Diffuse.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders/Diffuse.frag.spv" 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Grid.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders/Grid.vert.spv" 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Grid.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders/Grid.frag.spv" 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\external\boxer\lib\win\boxer.lib;..\..\..\..\external\glfw\lib\win\glfw3dll.lib;..\..\..\..\external\openxr\lib\win\openxr_loaderd.lib;..\..\..\..\external\tinyobjloader\lib\win\tinyobjloaderd.lib;C:\VulkanSDK\1.3.231.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/openxr-vulkan-example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/openxr-vulkan-example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>		shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/external/glfw/lib/win/glfw3.dll" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/models" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/models"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Diffuse.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders/Diffuse.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Diffuse.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders/Diffuse.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Grid.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders/Grid.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Grid.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders/Grid.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\external\boxer\lib\win\boxer.lib;..\..\..\..\external\glfw\lib\win\glfw3dll.lib;..\..\..\..\external\openxr\lib\win\openxr_loader.lib;..\..\..\..\external\tinyobjloader\lib\win\tinyobjloader.lib;C:\VulkanSDK\1.3.231.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/openxr-vulkan-example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/openxr-vulkan-example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>		shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/external/glfw/lib/win/glfw3.dll" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/models" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/models"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Diffuse.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders/Diffuse.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Diffuse.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders/Diffuse.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Grid.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders/Grid.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Grid.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders/Grid.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\external\boxer\lib\win\boxer.lib;..\..\..\..\external\glfw\lib\win\glfw3dll.lib;..\..\..\..\external\openxr\lib\win\openxr_loader.lib;..\..\..\..\external\tinyobjloader\lib\win\tinyobjloader.lib;C:\VulkanSDK\1.3.231.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/openxr-vulkan-example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/openxr-vulkan-example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.231.1\Include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glm\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\boxer\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\glfw\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\openxr\include;C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\external\tinyobjloader\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>		shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/external/glfw/lib/win/glfw3.dll" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/models" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/models"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Diffuse.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders/Diffuse.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Diffuse.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders/Diffuse.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Grid.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders/Grid.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Grid.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders/Grid.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\external\boxer\lib\win\boxer.lib;..\..\..\..\external\glfw\lib\win\glfw3dll.lib;..\..\..\..\external\openxr\lib\win\openxr_loader.lib;..\..\..\..\external\tinyobjloader\lib\win\tinyobjloader.lib;C:\VulkanSDK\1.3.231.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/openxr-vulkan-example.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/openxr-vulkan-example.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended" "-BC:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug" --check-stamp-file "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindVulkan.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended" "-BC:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug" --check-stamp-file "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindVulkan.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended" "-BC:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug" --check-stamp-file "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindVulkan.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended" "-BC:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug" --check-stamp-file "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\FindVulkan.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Main.cpp" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Context.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Context.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Input.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Input.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\DataBuffer.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\DataBuffer.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Headset.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Headset.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\ImageBuffer.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\ImageBuffer.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MeshData.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MeshData.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MirrorView.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MirrorView.h" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Model.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Pipeline.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Pipeline.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Renderer.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Renderer.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderProcess.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderProcess.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderTarget.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderTarget.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Util.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Util.h" />
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Diffuse.vert">
+    </None>
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Diffuse.frag">
+    </None>
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Grid.vert">
+    </None>
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Grid.frag">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\ZERO_CHECK.vcxproj">
+      <Project>{02F75E61-CC67-304F-80AF-E071073BD8E9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
