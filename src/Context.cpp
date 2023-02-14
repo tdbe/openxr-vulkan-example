@@ -21,6 +21,12 @@ const std::string applicationName = "OpenXR Vulkan Example";
 const std::string engineName = "OpenXR Vulkan Example";
 } // namespace
 
+// [tdbe] XrInxtance and VkInstance.
+// [tdbe] The context here is the gpu context you'd expect, but also OpenXR requires its own internal "xr context".
+// [tdbe] Mentioning this because if you want to integrate openXR into your own graphics api / stack, you're limited
+// [tdbe] to the internal support of OpenXR (e.g. vulkan, opengl, directx). If you for example want to integrate 
+// [tdbe] OpenXR into WebGPU, you can't, unless you "convert" wgpu -> to Vulkan, so that you can create a 
+// [tdbe] xr context here mapped to your Vulkan instance.
 Context::Context()
 {
   // Initialize GLFW
@@ -206,7 +212,7 @@ Context::Context()
     }
   }
 #endif
-
+ 
   // Get the system ID
   XrSystemGetInfo systemGetInfo{ XR_TYPE_SYSTEM_GET_INFO };
   systemGetInfo.formFactor = XR_FORM_FACTOR_HEAD_MOUNTED_DISPLAY;
@@ -256,6 +262,8 @@ Context::Context()
       return;
     }
   }
+
+  // [tdbe] check for openxr's vulkan requirements, and external's / general system vulkan extension requirements.
 
   // Get all supported Vulkan instance extensions
   std::vector<VkExtensionProperties> supportedVulkanInstanceExtensions;
@@ -515,6 +523,9 @@ Context::~Context()
   }
 }
 
+// [tdbe] Again, if you're trying to use your own graphics api/stack, you can provide your own
+// [tdbe] vkInstance, vkPhysicalDevice, vkDevice, vkDrawQueue, vkPresentQueue instead of the ones here.
+// [tdbe] So you could just replace this whole function.
 bool Context::createDevice(VkSurfaceKHR mirrorSurface)
 {
   // Retrieve the physical device from OpenXR
