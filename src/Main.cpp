@@ -1,12 +1,12 @@
 #include "Context.h"
-#include "Controllers.h"
+#include "Input.h"
 #include "Headset.h"
 #include "MeshData.h"
 #include "MirrorView.h"
 #include "Model.h"
 #include "Renderer.h"
 
-#include <glm/gtc/matrix_transform.hpp>
+
 
 #include <chrono>
 
@@ -42,8 +42,9 @@ int main()
     return EXIT_FAILURE;
   }
 
-  Controllers controllers(context.getXrInstance(), headset.getXrSession());
-  if (!controllers.isValid())
+  
+  Input inputSystem(context.getXrInstance(), headset.getXrSession());
+  if (!inputSystem.isValid())
   {
     return EXIT_FAILURE;
   }
@@ -63,38 +64,31 @@ int main()
   logoModel.worldMatrix = glm::translate(glm::mat4(1.0f), { 0.0f, 3.0f, -10.0f });
 
   MeshData* meshData = new MeshData;
-  if (!meshData->loadModel("models/Grid.obj", MeshData::Color::FromNormals, models, 0u, 1u))
-  {
+  if (!meshData->loadModel("models/Grid.obj", MeshData::Color::FromNormals, models, 0u, 1u)) {
     return EXIT_FAILURE;
   }
 
-  if (!meshData->loadModel("models/Ruins.obj", MeshData::Color::White, models, 1u, 1u))
-  {
+  if (!meshData->loadModel("models/Ruins.obj", MeshData::Color::White, models, 1u, 1u)) {
     return EXIT_FAILURE;
   }
 
-  if (!meshData->loadModel("models/Car.obj", MeshData::Color::White, models, 2u, 2u))
-  {
+  if (!meshData->loadModel("models/Car.obj", MeshData::Color::White, models, 2u, 2u)) {
     return EXIT_FAILURE;
   }
 
-  if (!meshData->loadModel("models/Beetle.obj", MeshData::Color::White, models, 4u, 1u))
-  {
+  if (!meshData->loadModel("models/Beetle.obj", MeshData::Color::White, models, 4u, 1u)) {
     return EXIT_FAILURE;
   }
 
-  if (!meshData->loadModel("models/Bike.obj", MeshData::Color::White, models, 5u, 1u))
-  {
+  if (!meshData->loadModel("models/Bike.obj", MeshData::Color::White, models, 5u, 1u)) {
     return EXIT_FAILURE;
   }
 
-  if (!meshData->loadModel("models/Hand.obj", MeshData::Color::White, models, 6u, 2u))
-  {
+  if (!meshData->loadModel("models/Hand.obj", MeshData::Color::White, models, 6u, 2u)) {
     return EXIT_FAILURE;
   }
 
-  if (!meshData->loadModel("models/Logo.obj", MeshData::Color::White, models, 8u, 1u))
-  {
+  if (!meshData->loadModel("models/Logo.obj", MeshData::Color::White, models, 8u, 1u)) {
     return EXIT_FAILURE;
   }
 
@@ -132,32 +126,44 @@ int main()
     }
     else if (frameResult == Headset::BeginFrameResult::RenderFully)
     {
-      if (!controllers.sync(headset.getXrSpace(), headset.getXrFrameState().predictedDisplayTime))
+      
+      if (!inputSystem.Sync(headset.getXrSpace(), headset.getXrFrameState().predictedDisplayTime, 
+                            headset.getEyePoses(), headset.getSessionState()))
       {
         return EXIT_FAILURE;
       }
-
+      Input::InputData inputData = inputSystem.GetInputData();
+      
       static float time = 0.0f;
       time += deltaTime;
 
       // Update
+      /*
       for (size_t controllerIndex = 0u; controllerIndex < 2u; ++controllerIndex)
       {
-        const float flySpeed = controllers.getFlySpeed(controllerIndex);
+        const float flySpeed = input.getFlySpeed(controllerIndex);
         if (flySpeed > 0.0f)
         {
-          const glm::vec3 forward = glm::normalize(controllers.getPose(controllerIndex)[2]);
+          const glm::vec3 forward = glm::normalize(input.getPose(controllerIndex)[2]);
           cameraMatrix = glm::translate(cameraMatrix, forward * flySpeed * flySpeedMultiplier * deltaTime);
         }
       }
 
       const glm::mat4 inverseCameraMatrix = glm::inverse(cameraMatrix);
-      handModelLeft.worldMatrix = inverseCameraMatrix * controllers.getPose(0u);
-      handModelRight.worldMatrix = inverseCameraMatrix * controllers.getPose(1u);
+      handModelLeft.worldMatrix = inverseCameraMatrix * input.getPose(0u);
+      handModelRight.worldMatrix = inverseCameraMatrix * input.getPose(1u);
+      handModelRight.worldMatrix = glm::scale(handModelRight.worldMatrix, { -1.0f, 1.0f, 1.0f });
+      */
+
+      const glm::mat4 inverseCameraMatrix = glm::inverse(cameraMatrix);
+      handModelLeft.worldMatrix = inverseCameraMatrix * inputData.controllerGripPoseMatrixes[(int)Input::ControllerEnum::LEFT];
+      handModelRight.worldMatrix = inverseCameraMatrix * inputData.controllerGripPoseMatrixes[(int)Input::ControllerEnum::RIGHT];
       handModelRight.worldMatrix = glm::scale(handModelRight.worldMatrix, { -1.0f, 1.0f, 1.0f });
 
       bikeModel.worldMatrix =
         glm::rotate(glm::translate(glm::mat4(1.0f), { 0.5f, 0.0f, -4.5f }), time * 0.2f, { 0.0f, 1.0f, 0.0f });
+
+      // [tdbe] TODO: do a xrRequestExitSession(session); ?
 
       // Render
       renderer.render(cameraMatrix, swapchainImageIndex, time);
