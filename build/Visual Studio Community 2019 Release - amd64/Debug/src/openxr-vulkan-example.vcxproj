@@ -598,10 +598,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Main.cpp" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\WorldObjectsMiscBehaviour.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\WorldObjectsMiscBehaviour.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\LocomotionBehaviour.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\LocomotionBehaviour.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\HandsBehaviour.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\HandsBehaviour.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\InputTesterBehaviour.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\InputTesterBehaviour.h" />
+    <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\GameBehaviour.cpp" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\gameMechanics\GameBehaviour.h" />
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Context.cpp" />
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Context.h" />
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Input.cpp" />
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Input.h" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\InputData.h" />
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\DataBuffer.cpp" />
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\DataBuffer.h" />
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Headset.cpp" />
