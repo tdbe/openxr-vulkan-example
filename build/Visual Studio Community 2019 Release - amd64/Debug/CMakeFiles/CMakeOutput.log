@@ -9,7 +9,7 @@ The output was:
 Microsoft (R) Build Engine version 16.10.2+857e5a733 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 2/18/2023 12:36:44 AM.
+Build started 2/23/2023 12:44:14 AM.
 Project "C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\CMakeFiles\3.23.0-rc3\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -62,7 +62,7 @@ The output was:
 Microsoft (R) Build Engine version 16.10.2+857e5a733 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 2/18/2023 12:36:46 AM.
+Build started 2/23/2023 12:44:16 AM.
 Project "C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\CMakeFiles\3.23.0-rc3\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -96,7 +96,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.54
+Time Elapsed 00:00:01.59
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -108,28 +108,28 @@ The CXX compiler identification is MSVC, found in "C:/_MC/_Work_synced/tdbe-open
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_94f62.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.10.2+857e5a733 for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_56a3d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.10.2+857e5a733 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30038.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   CMakeCCompilerABI.c
-  cl /c /I"C:\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_94f62.dir\Debug\\" /Fd"cmTC_94f62.dir\Debug\vc142.pdb" /external:env:EXTERNAL_INCLUDE /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c"
-  cmTC_94f62.vcxproj -> C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\CMakeFiles\CMakeTmp\Debug\cmTC_94f62.exe
+  cl /c /I"C:\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56a3d.dir\Debug\\" /Fd"cmTC_56a3d.dir\Debug\vc142.pdb" /external:env:EXTERNAL_INCLUDE /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c"
+  cmTC_56a3d.vcxproj -> C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\CMakeFiles\CMakeTmp\Debug\cmTC_56a3d.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_4838d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.10.2+857e5a733 for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_2096f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.10.2+857e5a733 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30038.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   CMakeCXXCompilerABI.cpp
-  cl /c /I"C:\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4838d.dir\Debug\\" /Fd"cmTC_4838d.dir\Debug\vc142.pdb" /external:env:EXTERNAL_INCLUDE /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_4838d.vcxproj -> C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\CMakeFiles\CMakeTmp\Debug\cmTC_4838d.exe
+  cl /c /I"C:\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2096f.dir\Debug\\" /Fd"cmTC_2096f.dir\Debug\vc142.pdb" /external:env:EXTERNAL_INCLUDE /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_2096f.vcxproj -> C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\build\Visual Studio Community 2019 Release - amd64\Debug\CMakeFiles\CMakeTmp\Debug\cmTC_2096f.exe
 
 
 

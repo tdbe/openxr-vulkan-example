@@ -96,7 +96,7 @@
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MirrorView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Model.h">
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\GameData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Pipeline.h">
@@ -119,6 +119,10 @@
     <CustomBuild Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Sky.vert" />
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Sky.frag" />
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\DiffuseTransparent.vert" />
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\DiffuseTransparent.frag" />
     <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Diffuse.vert" />
     <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Diffuse.frag" />
     <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Grid.vert" />

@@ -131,7 +131,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>		shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
+      <Message>		shaders/Sky.vert	shaders/Sky.frag	shaders/DiffuseTransparent.vert	shaders/DiffuseTransparent.frag	shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/external/glfw/lib/win/glfw3.dll" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug"
 if %errorlevel% neq 0 goto :cmEnd
@@ -143,6 +143,42 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/models" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/models"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Sky.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders/Sky.vert.spv" 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Sky.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders/Sky.frag.spv" 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/DiffuseTransparent.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders/DiffuseTransparent.vert.spv" 
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/DiffuseTransparent.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Debug/shaders/DiffuseTransparent.frag.spv" 
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -244,7 +280,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>		shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
+      <Message>		shaders/Sky.vert	shaders/Sky.frag	shaders/DiffuseTransparent.vert	shaders/DiffuseTransparent.frag	shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/external/glfw/lib/win/glfw3.dll" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release"
 if %errorlevel% neq 0 goto :cmEnd
@@ -256,6 +292,42 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/models" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/models"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Sky.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders/Sky.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Sky.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders/Sky.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/DiffuseTransparent.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders/DiffuseTransparent.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/DiffuseTransparent.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/Release/shaders/DiffuseTransparent.frag.spv" -O
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -357,7 +429,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>		shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
+      <Message>		shaders/Sky.vert	shaders/Sky.frag	shaders/DiffuseTransparent.vert	shaders/DiffuseTransparent.frag	shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/external/glfw/lib/win/glfw3.dll" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
@@ -369,6 +441,42 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/models" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/models"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Sky.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders/Sky.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Sky.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders/Sky.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/DiffuseTransparent.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders/DiffuseTransparent.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/DiffuseTransparent.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/MinSizeRel/shaders/DiffuseTransparent.frag.spv" -O
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -469,7 +577,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>		shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
+      <Message>		shaders/Sky.vert	shaders/Sky.frag	shaders/DiffuseTransparent.vert	shaders/DiffuseTransparent.frag	shaders/Diffuse.vert	shaders/Diffuse.frag	shaders/Grid.vert	shaders/Grid.frag</Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/external/glfw/lib/win/glfw3.dll" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo"
 if %errorlevel% neq 0 goto :cmEnd
@@ -481,6 +589,42 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/models" "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/models"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Sky.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders/Sky.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/Sky.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders/Sky.frag.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/DiffuseTransparent.vert" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders/DiffuseTransparent.vert.spv" -O
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+glslc --target-env=vulkan1.3 "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/src/shaders/DiffuseTransparent.frag" -std=450core -O -o "C:/_MC/_Work_synced/tdbe-openxr-vulkan-example-extended proj/_unsynced/tdbe-openxr-vulkan-example-extended/build/Visual Studio Community 2019 Release - amd64/Debug/src/RelWithDebInfo/shaders/DiffuseTransparent.frag.spv" -O
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -623,7 +767,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MeshData.h" />
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MirrorView.cpp" />
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\MirrorView.h" />
-    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Model.h" />
+    <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\GameData.h" />
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Pipeline.cpp" />
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Pipeline.h" />
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Renderer.cpp" />
@@ -634,6 +778,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\RenderTarget.h" />
     <ClCompile Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Util.cpp" />
     <ClInclude Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\Util.h" />
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Sky.vert">
+    </None>
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Sky.frag">
+    </None>
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\DiffuseTransparent.vert">
+    </None>
+    <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\DiffuseTransparent.frag">
+    </None>
     <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Diffuse.vert">
     </None>
     <None Include="C:\_MC\_Work_synced\tdbe-openxr-vulkan-example-extended proj\_unsynced\tdbe-openxr-vulkan-example-extended\src\shaders\Diffuse.frag">
